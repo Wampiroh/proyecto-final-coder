@@ -1,5 +1,31 @@
-@import '_reset';
+@import "_reset";
+@import "_fonts";
 
-.header__text{
-    font-family: 'Times New Roman', Times, serif;
+body {
+  background-image: url(../PSX_20200129_200310.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.header__text {
+  @include headerText;
+  text-align: center;
+  font-size: 100px;
+  width: auto;
+  &__content {
+    text-align: center;
+  }
+}
+.nav {
+  @include navText;
+  display: flexbox;
+  justify-content: center;
+  margin: 0, auto;
+  &__item {
+    display: inline-flex;
+    align-content: space-between;
+    padding: 2.5rem;
+    a{
+      @include navTextColor;
+    }
+  }
 }

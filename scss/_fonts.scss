@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200;300;700&display=swap');
+
+@mixin headerText {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.729);
+}
+@mixin navText{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 200;
+}
+@mixin navTextColor {
+    color: rgba(255, 226, 3, 0.9);
+    &:hover{
+        transform:scale(2);
+    }
+}

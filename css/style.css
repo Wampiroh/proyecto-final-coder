@@ -1,7 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200;300;700&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box; }
 
+body {
+  background-image: url(../PSX_20200129_200310.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat; }
+
 .header__text {
-  font-family: 'Times New Roman', Times, serif; }
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.729);
+  text-align: center;
+  font-size: 100px;
+  width: auto; }
+  .header__text__content {
+    text-align: center; }
+
+.nav {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight: 200;
+  display: flexbox;
+  justify-content: center;
+  margin: 0, auto; }
+  .nav__item {
+    display: inline-flex;
+    align-content: space-between;
+    padding: 2.5rem; }
+    .nav__item a {
+      color: rgba(255, 226, 3, 0.9); }
+      .nav__item a:hover {
+        transform: scale(2); }
