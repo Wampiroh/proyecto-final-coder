@@ -13,6 +13,7 @@ body {
   font-family: 'Yanone Kaffeesatz', sans-serif;
   font-weight: 300;
   color: rgba(255, 255, 255, 0.729);
+  padding-top: 1rem;
   text-align: center;
   font-size: 100px;
   width: auto; }
@@ -32,4 +33,23 @@ body {
     .nav__item a {
       color: rgba(255, 226, 3, 0.9); }
       .nav__item a:hover {
+        transition: .5s;
         transform: scale(2); }
+
+section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+  section__card {
+    transform: scale(1); }
+
+.card-body {
+  background-color: rgba(150, 150, 150, 0.695);
+  border-radius: 1px; }
+  .card-body card-text, .card-body p {
+    color: rgba(255, 226, 3, 0.9); }
+  .card-body .__settings {
+    font-family: 'Yafone Kaffeesatz', sans-serif;
+    font-style: italic;
+    font-weight: 200; }

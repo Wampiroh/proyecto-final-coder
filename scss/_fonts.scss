@@ -4,6 +4,7 @@
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-weight: 300;
     color: rgba(255, 255, 255, 0.729);
+    padding-top: 1rem;
 }
 @mixin navText{
     font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -12,6 +13,20 @@
 @mixin navTextColor {
     color: rgba(255, 226, 3, 0.9);
     &:hover{
+        transition: .5s;
         transform:scale(2);
     }
+}
+@mixin descriptionTextColor {
+    color:   rgba(255, 226, 3, 0.9);
+}
+
+@mixin descriptionSettings {
+    font-family: 'Yafone Kaffeesatz', sans-serif;
+    font-style: italic;
+    font-weight: 200;
+}
+
+@mixin cardBGColor {
+    background-color: rgba(150, 150, 150, 0.695);
 }
