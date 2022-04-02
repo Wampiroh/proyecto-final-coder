@@ -1,5 +1,6 @@
 @import "_reset";
 @import "_fonts";
+@import "home";
 
 body {
   background-image: url(../PSX_20200129_200310.jpg);
@@ -24,39 +25,40 @@ body {
     display: inline-flex;
     align-content: space-between;
     padding: 2.5rem;
-    a{
+    a {
       @include navTextColor;
     }
   }
 }
 
-section{
+section {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-    &__card{
-      transform: scale(1);
-    }
+  &__card {
+    transform: scale(1);
+  }
 }
-.card-body{
+.card-body {
   @include cardBGColor;
   border-radius: 1px;
-    card-text, p{
-      @include descriptionTextColor
-    }
-      .__settings{
-        @include descriptionSettings
-      }
+  card-text,
+  p {
+    @include descriptionTextColor;
+  }
+  .__settings {
+    @include descriptionSettings;
+  }
 }
 
-/* Portfolio Collage */ 
+/* Portfolio Collage */
 
 .wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   > * {
     margin: 5px;
   }
@@ -65,15 +67,17 @@ section{
 .media {
   width: 300px;
   height: 200px;
+  margin-block-end: 2rem;
   overflow: hidden;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   img {
-      max-width: 100%;
-      height: auto;
-    }
+    max-width: 100%;
+    height: auto;
+    justify-content: space-evenly;
+  }
 }
 
 .layer {
@@ -84,20 +88,21 @@ section{
   align-items: center;
   width: 10px;
   height: 90%;
-  background: #FFF;
-  color: #151E3F;
+  background: #fff;
+  color: #151e3f;
   transition: all 0.9s ease;
   p {
     transition: all 0.9s ease;
-    transform: scale(0.1)
+    transform: scale(0.1);
   }
 }
 
 p {
-  font-family: 'Inconsolata', monospace;
+  font-family: "Inconsolata", monospace;
   text-align: center;
+  padding: 3px;
   font-size: 15px;
-  letter-spacing:1px;
+  letter-spacing: 1px;
 }
 
 .media:hover .layer {
@@ -109,18 +114,30 @@ p {
     transition: all 0.9s ease;
   }
 }
-
-@media (max-width: 800px){
+@media (max-width: 800px) {
   body {
     transform: scale(0.6);
   }
 }
 
 @media (max-width: 600px) {
-    .wrapper {
+  .wrapper {
     display: block;
     > * {
       margin: 10px;
     }
+  }
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  a {
+    font-family: monospace;
+    padding: 20px;
+    justify-content: space-between;
+    color: rgb(189, 176, 176);
   }
 }

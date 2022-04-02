@@ -1,8 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200;300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200;300;700&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box; }
+
+.introSectionText {
+  font-family: 'Yanone Kaffesatz', sans-serif;
+  font-weight: 900;
+  color: rgba(255, 226, 3, 0.9); }
 
 body {
   background-image: url(../PSX_20200129_200310.jpg);
@@ -34,7 +40,7 @@ body {
       color: rgba(255, 226, 3, 0.9); }
       .nav__item a:hover {
         transition: .5s;
-        transform: scale(2); }
+        transform: scale(2.5); }
 
 section {
   display: flex;
@@ -47,7 +53,8 @@ section {
 .card-body {
   background-color: rgba(150, 150, 150, 0.695);
   border-radius: 1px; }
-  .card-body card-text, .card-body p {
+  .card-body card-text,
+  .card-body p {
     color: rgba(255, 226, 3, 0.9); }
   .card-body .__settings {
     font-family: 'Yafone Kaffeesatz', sans-serif;
@@ -66,6 +73,7 @@ section {
 .media {
   width: 300px;
   height: 200px;
+  margin-block-end: 2rem;
   overflow: hidden;
   position: relative;
   display: flex;
@@ -73,7 +81,8 @@ section {
   align-items: center; }
   .media img {
     max-width: 100%;
-    height: auto; }
+    height: auto;
+    justify-content: space-evenly; }
 
 .layer {
   opacity: 0;
@@ -83,16 +92,17 @@ section {
   align-items: center;
   width: 10px;
   height: 90%;
-  background: #FFF;
-  color: #151E3F;
+  background: #fff;
+  color: #151e3f;
   transition: all 0.9s ease; }
   .layer p {
     transition: all 0.9s ease;
     transform: scale(0.1); }
 
 p {
-  font-family: 'Inconsolata', monospace;
+  font-family: "Inconsolata", monospace;
   text-align: center;
+  padding: 3px;
   font-size: 15px;
   letter-spacing: 1px; }
 
@@ -113,3 +123,15 @@ p {
     display: block; }
     .wrapper > * {
       margin: 10px; } }
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center; }
+  .footer a {
+    font-family: monospace;
+    padding: 20px;
+    justify-content: space-between;
+    color: #bdb0b0; }
