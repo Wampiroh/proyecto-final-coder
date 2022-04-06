@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200;300;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200;300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200;300;700&display=swap");
 @import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
 * {
   padding: 0;
@@ -11,10 +12,20 @@
   font-weight: 900;
   color: rgba(255, 226, 3, 0.9); }
 
+container-fluid {
+  background-color: aliceblue;
+  opacity: 1;
+  z-index: 2; }
+  container-fluid .section1 {
+    font-family: 'Yafone Kaffeesatz', sans-serif;
+    font-weight: 300;
+    background-color: rgba(235, 235, 235, 0.977); }
+
 body {
   background-image: url(../PSX_20200129_200310.jpg);
   background-size: cover;
-  background-repeat: repeat-y; }
+  background-repeat: repeat-y;
+  z-index: 1; }
 
 .header__text {
   font-family: 'Yanone Kaffeesatz', sans-serif;

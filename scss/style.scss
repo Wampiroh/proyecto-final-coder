@@ -1,11 +1,13 @@
 @import "_reset";
 @import "_fonts";
 @import "home";
+@import "aboutme";
 
 body {
   background-image: url(../PSX_20200129_200310.jpg);
   background-size: cover;
   background-repeat: repeat-y;
+  z-index: 1;
 }
 .header__text {
   @include headerText;
