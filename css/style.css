@@ -12,17 +12,12 @@
   font-weight: 900;
   color: rgba(255, 226, 3, 0.9); }
 
-container-fluid .__section1, container-fluid .__section2 {
-  font-family: 'Yafone Kaffeesatz', sans-serif;
-  font-style: italic;
-  font-weight: 200;
-  color: rgba(255, 226, 3, 0.9);
-  font-weight: 500;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  justify-items: center;
-  width: 100%; }
+container-fluid .__section1 p, container-fluid .__section2 p, container-fluid .__section3 p {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight: 300;
+  text-decoration-color: aqua;
+  background-color: aqua;
+  color: azure; }
 
 body {
   background-image: url(../images/PSX_20200129_200310.jpg);

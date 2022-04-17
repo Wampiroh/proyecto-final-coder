@@ -1,14 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200;300;700&display=swap');
 
 container-fluid {
-        .__section1, .__section2{
-            @include descriptionSettings;
-            @include descriptionTextColor;
-            font-weight: 500;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            justify-items: center;
-            width: 100%;
+        .__section1, .__section2, .__section3{
+                p{
+                    font-family: 'Yanone Kaffeesatz', sans-serif;
+                    font-weight: 300;
+                    text-decoration-color: aqua;
+                    background-color: aqua;
+                    color: azure;
+                }
         }
  }
