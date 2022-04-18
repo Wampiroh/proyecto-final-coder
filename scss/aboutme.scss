@@ -1,13 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200;300;700&display=swap');
 
 container-fluid {
-        .__section1, .__section2, .__section3{
-                p{
+                &__section1, &__section2, &__section3{
+                    display: flex;
+                    word-wrap: normal;
                     font-family: 'Yanone Kaffeesatz', sans-serif;
                     font-weight: 300;
-                    text-decoration-color: aqua;
-                    background-color: aqua;
-                    color: azure;
                 }
-        }
+ }
+ .textBio{
+         display: flex;
+         width: 40%;
+         height: auto;
+         padding: 1rem;
+         margin: auto;
+         text-align: center;
+         justify-content: center;
+         word-wrap: normal;
+         word-spacing: 2px;
+         color: white;
+         background-color: rgba(0, 0, 128, 0.200);
+ }
+ figure{
+         img{
+                position: relative;
+                width: 33%;
+                height: 100%;
+                text-align: center;
+                display: flex;
+                margin: auto;
+         }
  }

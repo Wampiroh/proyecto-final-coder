@@ -12,12 +12,32 @@
   font-weight: 900;
   color: rgba(255, 226, 3, 0.9); }
 
-container-fluid .__section1 p, container-fluid .__section2 p, container-fluid .__section3 p {
+container-fluid__section1, container-fluid__section2, container-fluid__section3 {
+  display: flex;
+  word-wrap: normal;
   font-family: 'Yanone Kaffeesatz', sans-serif;
-  font-weight: 300;
-  text-decoration-color: aqua;
-  background-color: aqua;
-  color: azure; }
+  font-weight: 300; }
+
+.textBio {
+  display: flex;
+  width: 40%;
+  height: auto;
+  padding: 1rem;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  word-wrap: normal;
+  word-spacing: 2px;
+  color: white;
+  background-color: rgba(0, 0, 128, 0.2); }
+
+figure img {
+  position: relative;
+  width: 33%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  margin: auto; }
 
 body {
   background-image: url(../images/PSX_20200129_200310.jpg);
@@ -32,7 +52,8 @@ body {
   padding-top: 1rem;
   text-align: center;
   font-size: 100px;
-  width: auto; }
+  width: auto;
+  margin: auto; }
   .header__text__content {
     text-align: center; }
 
@@ -88,7 +109,8 @@ section {
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  border-radius: 3px; }
   .media img {
     max-width: 100%;
     height: auto;
@@ -102,6 +124,7 @@ section {
   align-items: center;
   width: 10px;
   height: 90%;
+  border-radius: 3px;
   background: #fff;
   color: #151e3f;
   transition: all 0.9s ease; }
@@ -124,11 +147,11 @@ p {
     transform: scale(1);
     transition: all 0.9s ease; }
 
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   body {
     transform: scale(0.6); } }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 568px) {
   .wrapper {
     display: block; }
     .wrapper > * {
@@ -256,9 +279,9 @@ textarea:hover {
 
 /* Footer area */
 .footer {
-  position: relative;
+  position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: auto;
   width: 100%;
   text-align: center; }
   .footer a {

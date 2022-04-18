@@ -14,6 +14,7 @@ body {
   text-align: center;
   font-size: 100px;
   width: auto;
+  margin: auto;
   &__content {
     text-align: center;
   }
@@ -75,6 +76,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 3px;
     img {
     max-width: 100%;
     height: auto;
@@ -90,6 +92,7 @@ section {
   align-items: center;
   width: 10px;
   height: 90%;
+  border-radius: 3px;
   background: #fff;
   color: #151e3f;
   transition: all 0.9s ease;
@@ -116,13 +119,13 @@ p {
     transition: all 0.9s ease;
   }
 }
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   body {
     transform: scale(0.6);
   }
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 568px) {
   .wrapper {
     display: block;
     > * {
@@ -140,9 +143,9 @@ p {
 /* Footer area */
 
 .footer {
-  position:relative;
+  position:absolute;
   left: 0;
-  bottom: 0;
+  bottom: auto;
   width: 100%;
   text-align: center;
   a {
