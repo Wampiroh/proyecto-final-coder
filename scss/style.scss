@@ -3,12 +3,14 @@
 @import "home";
 @import "aboutme";
 
+/* Backgroud img */ 
 body {
   background-image: url(../images/PSX_20200129_200310.jpg);
   background-size: cover;
   background-repeat: repeat-y;
   z-index: 1; 
 }
+/* Header and nav */ 
 .header__text {
   @include headerText;
   text-align: center;
@@ -119,20 +121,6 @@ p {
     transition: all 0.9s ease;
   }
 }
-@media screen and (max-width: 800px) {
-  body {
-    transform: scale(0.6);
-  }
-}
-
-@media screen and (max-width: 568px) {
-  .wrapper {
-    display: block;
-    > * {
-      margin: 10px;
-    }
-  }
-}
 
 /* contact area*/ 
 @import 'contactstyle';
@@ -153,5 +141,22 @@ p {
     padding: 20px;
     justify-content: space-between;
     color: rgb(189, 176, 176);
+  }
+}
+
+/* Media queries */ 
+
+@media screen and (max-width: 800px) {
+  body {
+    transform: scale(0.9);
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .wrapper {
+    display: block;
+    > * {
+      margin: 10px;
+    }
   }
 }
