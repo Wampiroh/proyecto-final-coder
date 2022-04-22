@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200;300;700&display=swap');
+
+.introSection{
+    &Text{
+        font-family: 'Yanone Kaffesatz', sans-serif;
+        font-weight: 900;
+        @include descriptionTextColor
+    }
+}
