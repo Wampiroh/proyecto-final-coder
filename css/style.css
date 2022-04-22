@@ -75,25 +75,6 @@ body {
         transition: .5s;
         transform: scale(2.5); }
 
-section {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around; }
-  section__card {
-    transform: scale(1); }
-
-.card-body {
-  background-color: rgba(150, 150, 150, 0.695);
-  border-radius: 1px; }
-  .card-body card-text,
-  .card-body p {
-    color: rgba(255, 226, 3, 0.9); }
-  .card-body .__settings {
-    font-family: 'Yafone Kaffeesatz', sans-serif;
-    font-style: italic;
-    font-weight: 200; }
-
 /* Portfolio Collage */
 .wrapper {
   display: flex;

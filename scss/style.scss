@@ -36,27 +36,6 @@ body {
   }
 }
 
-section {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  &__card {
-    transform: scale(1);
-  }
-}
-.card-body {
-  @include cardBGColor;
-  border-radius: 1px;
-  card-text,
-  p {
-    @include descriptionTextColor;
-  }
-  .__settings {
-    @include descriptionSettings;
-  }
-}
-
 /* Portfolio Collage */
 
 .wrapper {
